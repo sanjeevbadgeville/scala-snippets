@@ -10,10 +10,10 @@ object SendGridScala {
     val sendgrid:SendGrid = new SendGrid("<YOUR_API_KEY>")
 
     val email:SendGrid.Email = new SendGrid.Email()
-    email.addTo("sanjeev@badgeville.com")
-    email.setFrom("other@example.com")
+    email.addTo("to@example.com")
+    email.setFrom("from@example.com")
     email.setSubject("Hello World")
-    email.setText("My first email with SendGrid Java!")
+    email.setText("My first email with SendGrid in Scala!")
 
     try {
       val response: SendGrid.Response = sendgrid.send(email)
