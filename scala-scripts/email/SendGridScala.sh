@@ -1,5 +1,5 @@
 #!/bin/sh
-exec /opt/lang/scala/scala-2.11.7/bin/scala -classpath "lib/sendgrid-java.jar:." "$0" "$@"
+exec scala -classpath "jars/*:." "$0" "$@"
 !#
 
 import com.sendgrid._
